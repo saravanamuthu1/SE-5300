@@ -1,1 +1,4 @@
-print("hello world")
+def fun():
+    print(“Something that provides mirth or amusement”)
+
+fun()
