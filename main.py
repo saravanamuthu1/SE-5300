@@ -24,3 +24,4 @@ if uploaded_file is not None:
         st.dataframe(df)
     else:
         st.write("column not found")
+
