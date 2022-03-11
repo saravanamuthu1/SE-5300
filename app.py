@@ -3,17 +3,12 @@ data science app
 """
 import streamlit as st
 import pandas as pd
-from __future__ import print_function
-#upload file 
 st.title("my data app")
 st.write(""" upload csv file """)
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
     # Can be used wherever a "file-like" object is accepted:
     df1 = pd.read_csv(uploaded_file)
-"""
-check box function
-"""
 def check_box():
     """
     check box function
@@ -30,9 +25,6 @@ def check_box():
         st.checkbox(column)
     for column in df1.columns:
         st.line_chart(df1[column])
-"""
-delete column function
-"""
 def delete_column():
     """
     delete column function
