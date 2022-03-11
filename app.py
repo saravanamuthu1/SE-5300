@@ -25,6 +25,7 @@ def check_box():
         st.subheader('raw data')
         st.write(df1)
         st.write("check the colomn to be deleted")
+    st.write("columns in the  data")
     for column in df1.columns:
         st.checkbox(column)
     for column in df1.columns:
