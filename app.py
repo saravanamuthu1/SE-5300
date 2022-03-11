@@ -1,7 +1,8 @@
+"""
+data science app
+"""
 import streamlit as st
 import pandas as pd
-import numpy as np
-
 #upload file 
 st.title("my data app")
 st.write(""" upload csv file """)
@@ -31,11 +32,11 @@ def check_box():
     for column in df1.columns:
         st.line_chart(df1[column])
 """
-   delete column function
+delete column function
 """
 def delete_column():
     """
-     delete column function
+    delete column function
     """
     text_input1=st.text_input("do you want to delete columns")
     if(text_input1 == "yes"):
