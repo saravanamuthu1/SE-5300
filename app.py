@@ -47,4 +47,3 @@ def delete_column():
 if __name__ =="__main__":
     check_box()
     delete_column()
-
