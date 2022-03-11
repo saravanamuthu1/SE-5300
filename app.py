@@ -34,14 +34,14 @@ def delete_column():
      """
      delete column function
      """
-    text_input1=st.text_input("do you want to delete columns")
-    if(text_input1 == "yes"):
-        if(type(text_input1) == str):
-            df1.drop(columns=[st.text_input("enter the column to be deleted")],axis=1,inplace=True)
-            st.write("column is deleted")
-            st.dataframe(df1)
-        else:
-            st.write("column not found")
+     text_input1=st.text_input("do you want to delete columns")
+     if(text_input1 == "yes"):
+          if(type(text_input1) == str):
+               df1.drop(columns=[st.text_input("enter the column to be deleted")],axis=1,inplace=True)
+               st.write("column is deleted")
+               st.dataframe(df1)
+          else:
+               st.write("column not found")
 if __name__ =="__main__":
     check_box()
     delete_column()
