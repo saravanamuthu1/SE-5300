@@ -1,7 +1,12 @@
-                               Machine Learning Code generator for Non Programmers 
-       For sprint one we started generating data visulatization using Machine learning models using python as programming language. 
-       We divided the program into few functionality we start with uploading raw data cluster the data and display them in line chart format.
-       Following are steps to see the results of Sprint1
-       open app.py 
-       in the terminal type  streanlit  run app.py
-       User can uplaod any file in .csv format to check the results 
+                                    ** Machine Learning Code generator for Non Programmers **
+                                         
+This is a little project on top of outputty and matplotlib that aims in easily create plots (without  using matplotlib). For now you can    do linear, scatter and bar plots with data from CSV files.This program generates graphs from a given CSV file and allows the user to generate a User friendly graph
+       
+  **Requirements/Installations**
+•	Execute pip install numpy matplotlib outputty
+•	Download plotter
+•	Unpack outputty and plotter in the same directory 
+
+**Deployment**
+
+The best way to deploy this software for use in lab is to run locally either through command prompt or a Python Interpreter of your own
