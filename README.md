@@ -5,7 +5,9 @@ This is a little project on top of outputty and matplotlib that aims in easily c
   **Requirements/Installations**
   
 •	Execute pip install numpy matplotlib outputty
+
 •	Download plotter
+
 •	Unpack outputty and plotter in the same directory 
 
 **Deployment**
