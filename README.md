@@ -6,9 +6,7 @@ This is a little project on top of outputty and matplotlib that aims in easily c
   
 •	Execute pip install numpy matplotlib outputty
 
-•	Download plotter
-
-  pip install outputty
+•	Clone the project 
 
 •	Unpack outputty and plotter in the same directory 
 
