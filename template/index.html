@@ -18,11 +18,11 @@
         <h1>name of the file uploaded</h1>
         {{filename}}
         <h1>size of the file</h1>
-        {{size}}
+        {{data_size}}
         <h1>column names in the file</h1>
         <form method="POST" action="{{url_for('uploadFiles')}}" enctype="multipart/form-data">
         <table>
-        {%for i in columns%}
+        {%for i in column_names%}
         <tr>
           <td>
             <input type="checkbox" value={{i}} name="mycheckbox">{{i}}
