@@ -1,45 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylecheet" href="{{ url_for('static',filename='main.css')}}">
-    <title>ml visualizer</title>
-</head>
-<body>
-    <div class="input_class">
-        <h1>Upload your CSV file</h1>
-        <form method="POST" action="{{url_for('uploadFiles')}}" enctype="multipart/form-data">
-          <p><input type="file" name="csv_data"></p>
-          <p><input type="submit" value="Submit"></p>
-        </form>
+{%extends "bootstrap/base.html" %}
+
+{% block content %}
+<!-- Main Content Is Here -->
+     <div class="container">
+      <div class="jumbotron">
+         <h1 class="display-3">Simplified MLApp</h1>
+          <p>Machine Learning code generator</p>
         </div>
-        <h1>name of the file uploaded</h1>
-        {{filename}}
-        <h1>size of the file</h1>
-        {{data_size}}
-        <h1>column names in the file</h1>
-        <table>
-        {%for i in getColumnNames%}
-        <tr>
-          <td>
-            <p>{{i}}<p>
-          </td>
-          {%endfor%}
-        </tr>
-      </table>
-      <div className="deletecolumns">
-        <h1>enter the name of the column to be deleted</h1>
-        <input type="text" name="column_name">
-        <input type="submit">
-      </div>
-      <div>
-        {{message}}
-      </div>
-      <div>
-        <h1>number of rows and columns in the dataframe</h1>
-        {{shape}}
-      </div>
-</body>
-</html>
+      
+
+      <div class="container">
+        <form method="POST" class="form-group" enctype="multipart/form-data" action="{{ url_for('datauploads')}}"> 
+          <input type="file" name="csv_data">
+          <input type="submit" class="btn btn-primary mb-2"> 
+          <input type="reset" value="Reset" class="btn btn-danger mb-2">
+        </form>
+                    
+     </div> 
+    
+    </div>     
+    
+ 
+
+{% endblock %}
+
+<!-- Main External 3-Party JS Is Here -->
+
+{% block scripts %}
+
+{{ super() }} 
+
+
+
+{% endblock%}
