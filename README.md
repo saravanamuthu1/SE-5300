@@ -4,11 +4,12 @@ This is a little project on top of outputty and matplotlib that aims in easily c
        
   **Requirements/Installations**
   
-•	Execute pip install numpy matplotlib outputty
-
+•	Execute pip install numpy matplotlib 
 •	Clone the project 
 
-•	Unpack outputty and plotter in the same directory 
+•	To execute the project type python main.py in your Command Line/Terminal
+. Upload a CSV file from your local system 
+. Choose the graph from Drop down menu 
 
 **Deployment**
 
