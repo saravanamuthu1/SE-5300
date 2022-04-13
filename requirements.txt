@@ -1,4 +1,6 @@
 pandas
+plotter
+PyQt5
 Ui_Dialog
 QtCore
 QtGui
