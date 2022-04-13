@@ -29,3 +29,4 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint --disable=missing-docstring --indent-string='   ' $(git ls-files "*.py")
+        fail-fast: false
