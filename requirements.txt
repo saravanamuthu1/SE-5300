@@ -1,6 +1,0 @@
-pandas
-plotter
-PyQt5
-QtCore
-QtGui
-QtWidget
